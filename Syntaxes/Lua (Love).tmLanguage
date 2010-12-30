@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array/>
+	<key>foldingStartMarker</key>
+	<string>^\s*\b(function|local\s+function|if|for)\b|{[ \t]*$|\[\[</string>
+	<key>foldingStopMarker</key>
+	<string>\bend\b|^\s*}|\]\]</string>
+	<key>name</key>
+	<string>Lua (Love)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.lua</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(love|audio|event|filesystem|font|graphics|image|joystick|keyboard|mouse|physics|sound|thread|timer)\b</string>
+			<key>name</key>
+			<string>support.variable.love</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Data|Object|Source|SourceType|Event|File|FileData|FileDecoder|FileMode|FontData|GlyphData|Rasterizer|Drawable|Font|Framebuffer|Image|ParticleSystem|Quad|SpriteBatch|AlignMode|BlendMode|ColorMode|DrawMode|FilterMode|LineStyle|PointStyle|WrapMode)\b</string>
+			<key>name</key>
+			<string>support.class.love</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[.:]\b(draw|focus|joystickpressed|joystickreleased|keypressed|keyreleased|load|mousepressed|mousereleased|quit|run|update|type|typeOf|pause|play|resume|rewind|stop|poll|pump|push|wait|enumerate|exists|init|lines|load|mkdir|read|remove|write|close|eof|open|seek|tell|checkMode|circle|clear|draw|drawq|line|point|polygon|pop|present|print|printf|push|rectangle|reset|rotate|scale|toggleFullscreen|translate|triangle|renderTo|count|pause|reset|start|stop|flip|add|addq|clear|get(NumSources|Orientation|Position|Velocity|Volume|AppdataDirectory|SaveDirectory|UserDirectory|WorkingDirectory|Size|Pointer|Extension|Filename|BackgroundColor|BlendMode|Caption|Color|ColorMode|Font|Height|LineStipple|LineStyle|LineWidth|MaxPointSize|Modes|PointSize|PointStyle|Scissor|Width|LineHeight|ImageData|Filter|Wrap|Direction|OffsetX|OffsetY|Spread|X|Y|Viewport)|new(Source|File|FileData|FontData|GlyphData|Rasterizer|Font|Framebuffer|Image|ParticleSystem|Quad|Screenshot|SpriteBatch)|set(Orientation|Position|Velocity|Volume|Identity|Source|BackgroundColor|BlendMode|Caption|Color|ColorMode|Font|LineStipple|LineStyle|LineWidth|Mode|PointSize|PointStyle|RenderTarget|Scissor|LineHeight|Filter|Wrap|BufferSize|Color|Direction|EmissionRate|Gravity|Lifetime|Offset|ParticleLife|Position|RadialAcceleration|Rotation|Size|SizeVariation|Speed|Spin|SpinVariation|Spread|Sprite|TangentialAcceleration|Viewport)|is(Directory|File|Created|Active|Empty|Full))\b</string>
+			<key>name</key>
+			<string>support.function.love</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.lua.love</string>
+	<key>uuid</key>
+	<string>93F46C5C-30D8-4393-96FF-60EC6FA4EFC6</string>
+</dict>
+</plist>
