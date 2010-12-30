@@ -6,19 +6,18 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-open "http://love2d.org/wiki/${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}"
-echo 'All good! :)'</string>
-	<key>fallbackInput</key>
-	<string>word</string>
+open -a love ${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY}</string>
 	<key>input</key>
-	<string>selection</string>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
 	<key>name</key>
-	<string>Look Up Love Wiki</string>
+	<string>Run Love</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>discard</string>
 	<key>scope</key>
 	<string>source.lua.love</string>
 	<key>uuid</key>
-	<string>CC332FA5-9CD7-441D-A3A7-D971F9F94D6C</string>
+	<string>1E29CA7D-E299-445A-8280-A90048A3AF7A</string>
 </dict>
 </plist>

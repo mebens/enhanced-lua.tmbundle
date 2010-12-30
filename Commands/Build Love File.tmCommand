@@ -6,19 +6,19 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-open "http://love2d.org/wiki/${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}"
-echo 'All good! :)'</string>
-	<key>fallbackInput</key>
-	<string>word</string>
+zip -r "${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}game.love" "${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}"
+echo "game.love saved in ${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}"</string>
 	<key>input</key>
-	<string>selection</string>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
 	<key>name</key>
-	<string>Look Up Love Wiki</string>
+	<string>Build Love File</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>source.lua.love</string>
 	<key>uuid</key>
-	<string>CC332FA5-9CD7-441D-A3A7-D971F9F94D6C</string>
+	<string>9D79F5B0-97A3-476F-8248-65033FC238C3</string>
 </dict>
 </plist>

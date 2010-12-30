@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>function love.update()
+	$0
+end
+</string>
+	<key>name</key>
+	<string>update</string>
+	<key>scope</key>
+	<string>source.lua.love</string>
+	<key>tabTrigger</key>
+	<string>update</string>
+	<key>uuid</key>
+	<string>67FE994B-F16C-4AE7-8C41-E0F334C29511</string>
+</dict>
+</plist>

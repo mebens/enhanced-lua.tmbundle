@@ -27,6 +27,8 @@ system("open", "http://love2d.org/forums/search.php?keywords=" + kws + "&amp;ter
 	<string>Search Love Forums</string>
 	<key>output</key>
 	<string>discard</string>
+	<key>scope</key>
+	<string>source.lua.love</string>
 	<key>uuid</key>
 	<string>EDAEDD4D-4670-4F19-825D-7AAC5DA1B9B2</string>
 </dict>
