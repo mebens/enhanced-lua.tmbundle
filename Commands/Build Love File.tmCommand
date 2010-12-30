@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-zip -r "${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}game.love" "${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}"
+zip -r "${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}game.love" "${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}*"
 echo "game.love saved in ${TM_PROJECT_DIRECTORY:-$TM_DIRECTORY/}"</string>
 	<key>input</key>
 	<string>none</string>
