@@ -27,7 +27,7 @@ function love.conf(t)
 end
 </string>
 	<key>name</key>
-	<string>conf</string>
+	<string>love.conf</string>
 	<key>scope</key>
 	<string>source.lua.love</string>
 	<key>tabTrigger</key>

@@ -7,7 +7,7 @@
 	$0
 end</string>
 	<key>name</key>
-	<string>draw</string>
+	<string>love.draw</string>
 	<key>scope</key>
 	<string>source.lua.love</string>
 	<key>tabTrigger</key>

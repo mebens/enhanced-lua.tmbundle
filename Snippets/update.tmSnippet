@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function love.update()
+	<string>function love.update(dt)
 	$0
 end
 </string>
 	<key>name</key>
-	<string>update</string>
+	<string>love.update</string>
 	<key>scope</key>
 	<string>source.lua.love</string>
 	<key>tabTrigger</key>

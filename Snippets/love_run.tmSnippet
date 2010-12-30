@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>-- Default loop for love.run()
+function love.run()
+	if love.load then love.load(arg) end
+
+    local dt = 0
+
+    -- Main loop time.
+    while true do
+        if love.timer then
+            love.timer.step()
+            dt = love.timer.getDelta()
+        end
+        
+        if love.update then
+            love.update(dt) -- will pass 0 if love.timer is disabled
+        end
+        
+        if love.graphics then
+            love.graphics.clear()
+            if love.draw then love.draw() end
+        end
+
+        -- Process events.
+        if love.event then
+            for e, a, b, c in love.event.poll() do
+                if e == "q" then
+                    if not love.quit or not love.quit() then
+                        if love.audio then
+                            love.audio.stop()
+                        end
+                        
+                        return
+                    end
+                end
+                
+                love.handlers[e](a,b,c)
+            end
+        end
+
+        if love.timer then love.timer.sleep(1) end
+        if love.graphics then love.graphics.present() end
+    end
+end</string>
+	<key>name</key>
+	<string>love.run</string>
+	<key>scope</key>
+	<string>source.lua.love</string>
+	<key>tabTrigger</key>
+	<string>run</string>
+	<key>uuid</key>
+	<string>D055C8D6-BE90-44DD-BD55-F534D751A124</string>
+</dict>
+</plist>

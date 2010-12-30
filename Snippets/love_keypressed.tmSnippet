@@ -3,17 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function love.load()
+	<string>function love.keypressed(key, unicode)
 	$0
-end
-</string>
+end</string>
 	<key>name</key>
-	<string>love.load</string>
+	<string>love.keypressed</string>
 	<key>scope</key>
 	<string>source.lua.love</string>
 	<key>tabTrigger</key>
-	<string>load</string>
+	<string>keypressed</string>
 	<key>uuid</key>
-	<string>16C91E96-32A4-4C0A-B05D-AAB42C0B8B61</string>
+	<string>F07EA27E-1FE9-449C-B188-BFC39494BEBB</string>
 </dict>
 </plist>
