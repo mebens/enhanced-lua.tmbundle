@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU 
+
+require ENV['TM_SUPPORT_PATH'] + '/lib/textmate.rb' 
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb' 
+require ENV['TM_BUNDLE_SUPPORT'] + '/completion.rb'
+
+TextMate::UI.complete(@choices, {:extra_chars =&gt; '.'}) do |choice|
+	TextMate::UI.tool_tip( choice['tool_tip'], {:format =&gt; :html} )
+	choice['insert']
+end</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>§</string>
+	<key>name</key>
+	<string>Completions</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.lua</string>
+	<key>uuid</key>
+	<string>50C5B18C-0E63-4C00-9F8E-275FABF6986C</string>
+</dict>
+</plist>
