@@ -3,41 +3,41 @@
 -- Date: ${TM_DATE}
 
 -- Initialization
-function load()
+function love.load()
 	
 end
 
 -- Logic
-function update(dt)
+function love.update(dt)
 	
 end
 
 -- Rendering
-function draw()
+function love.draw()
 	
 end
 
 -- Input
-function keypressed()
+function love.keypressed()
 	
 end
 
-function keyreleased()
+function love.keyreleased()
 	
 end
 
-function mousepressed()
+function love.mousepressed()
 	
 end
 
-function mousereleased()
+function love.mousereleased()
 	
 end
 
-function joystickpressed()
+function love.joystickpressed()
 	
 end
 
-function joystickreleased()
+function love.joystickreleased()
 	
 end
