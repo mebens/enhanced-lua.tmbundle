@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name}($2)
-	$0
-end</string>
+	<string>assert_empty($1)$0</string>
 	<key>name</key>
-	<string>function</string>
+	<string>assert_empty</string>
 	<key>scope</key>
 	<string>source.lua</string>
 	<key>tabTrigger</key>
-	<string>function</string>
+	<string>assert</string>
 	<key>uuid</key>
-	<string>F4A541EB-8C83-4EFB-97A7-F780807AC23A</string>
+	<string>5EBC8E68-BFD5-4165-92D6-D2AB6C6048D9</string>
 </dict>
 </plist>

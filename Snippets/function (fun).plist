@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name}(${2:...})
-	${0:-- body}
+	<string>function ${1:function_name}($2)
+	$0
 end</string>
 	<key>name</key>
 	<string>function</string>

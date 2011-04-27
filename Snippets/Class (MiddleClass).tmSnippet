@@ -3,16 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name}($2)
-	$0
+	<string>${1:MyClass} = class('$1', ${2:Object})
+
+function $1:initialize($3)
+  ${2/([\w\d]+)/(?1:$1.initialize\(self\)\n  )/}$0
 end</string>
 	<key>name</key>
-	<string>function</string>
+	<string>Class (MiddleClass)</string>
 	<key>scope</key>
 	<string>source.lua</string>
 	<key>tabTrigger</key>
-	<string>function</string>
+	<string>class</string>
 	<key>uuid</key>
-	<string>F4A541EB-8C83-4EFB-97A7-F780807AC23A</string>
+	<string>7057E5A7-92CF-43B1-A8F0-310BCF3E8966</string>
 </dict>
 </plist>

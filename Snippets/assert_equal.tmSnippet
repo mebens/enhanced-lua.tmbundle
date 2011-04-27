@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name}($2)
-	$0
-end</string>
+	<string>assert_equal($1, $2)$0</string>
 	<key>name</key>
-	<string>function</string>
+	<string>assert_equal</string>
 	<key>scope</key>
 	<string>source.lua</string>
 	<key>tabTrigger</key>
-	<string>function</string>
+	<string>assert</string>
 	<key>uuid</key>
-	<string>F4A541EB-8C83-4EFB-97A7-F780807AC23A</string>
+	<string>E529FDBE-EC32-4D23-BFF3-FA460E63ECF4</string>
 </dict>
 </plist>
