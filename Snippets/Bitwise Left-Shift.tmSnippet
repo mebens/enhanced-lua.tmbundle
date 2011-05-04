@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>$1 * 2 ^ ${2:by}</string>
+	<key>name</key>
+	<string>Bitwise Left-Shift</string>
+	<key>scope</key>
+	<string>source.lua</string>
+	<key>tabTrigger</key>
+	<string>lshift</string>
+	<key>uuid</key>
+	<string>939E4D39-51E3-41DC-ACCB-6A71995F60CE</string>
+</dict>
+</plist>

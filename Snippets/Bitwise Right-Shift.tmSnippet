@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>math.floor($1 / 2 ^ ${2:by})</string>
+	<key>name</key>
+	<string>Bitwise Right-Shift</string>
+	<key>scope</key>
+	<string>source.lua</string>
+	<key>tabTrigger</key>
+	<string>rshift</string>
+	<key>uuid</key>
+	<string>88C65306-C6CB-4293-A6F1-EF5AAD65E38A</string>
+</dict>
+</plist>

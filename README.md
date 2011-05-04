@@ -1,4 +1,4 @@
-This bundle is a modified version of the Lua bundle for TextMate which contains support. It contains support for the libraries I use most in Lua. These are listed in the following sections. I've also modified a number of things in it to conform to the way I like it.
+This bundle is a modified version of the Lua bundle for TextMate. It contains support for the libraries I use most in Lua. These are listed in the following sections. In addition, it provides snippets for compound operators like +=, -=, ++, etc., and a couple snippets for efficient bitwise shifts. I've also modified a number of things in it to conform to the way I like it.
 
 ## [LÖVE](http://love2d.org) game engine
 
