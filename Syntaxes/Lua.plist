@@ -154,6 +154,36 @@
 			<string>string.quoted.other.multiline.lua</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.toc-list.banner.block.lua</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^/\* =(\s*.*?)\s*= \*/$\n?</string>
+			<key>name</key>
+			<string>comment.block.lua</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.lua</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.lua</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>--\[(=*)\[</string>
 			<key>captures</key>
@@ -167,7 +197,21 @@
 			<key>end</key>
 			<string>\]\1\]</string>
 			<key>name</key>
-			<string>comment.block.lua</string>
+			<string>comment.block.hash.lua</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.lua</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(--)(?!\[\[).*$\n?</string>
+			<key>name</key>
+			<string>comment.block.hash.lua</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -182,6 +226,31 @@
 			<string>(--)(?!\[\[).*$\n?</string>
 			<key>name</key>
 			<string>comment.line.double-dash.lua</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>//</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definitition.comment.lua</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>$\n?</string>
+			<key>name</key>
+			<string>comment.line.double-slash.c++.lua</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(?&gt;\\\s*\n)</string>
+					<key>name</key>
+					<string>punctuation.separator.continuation.lua</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>match</key>
